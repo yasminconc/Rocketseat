@@ -25,7 +25,6 @@ body::before {
     left: 0;
     z-index: -1;
 
-    /*display: block;*/
 }
 
 .page {
@@ -238,5 +237,10 @@ footer .button {
 
 footer .button:hover{
     background: #08b255;
+}
+
+
+input:invalid {
+    border: 1px solid #FF1010;
 }
 
