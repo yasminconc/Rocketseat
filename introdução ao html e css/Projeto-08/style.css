@@ -132,6 +132,13 @@ main h1 {
 
 .item img {
     width: 100%;
+    transition: all 200ms ease-out;
+
+    /* transition-property: all;
+    transition-duration: 300ms;
+    transition-delay: 0;
+    transition-timing-function: ease-out; */
+    /* filter: grayscale(1); */
 
     /*
     para usar em caso de imagens com tamanhos diferentes
@@ -143,8 +150,18 @@ main h1 {
 
 }
 
+
+.item img:hover {
+    cursor: pointer;
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-2deg);
+}
+
 .details {
     padding: 2.2rem;
+    background-color: var(--color-base-white);
+    z-index: 1;
+    position: relative;
 }
 
 .details h2 {
